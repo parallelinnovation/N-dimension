@@ -28,3 +28,5 @@ Intended to be cross-platform (Windows/OSX/Linux)
 * __FILE 4: ndGUIstatic.py__--------pyqt static frontend
 * __FILE 5: ndGUIdynamic.py__-------pyqt dynamic frontend
 * __FILE 6: ndLANG.py__-------------NLTK language processing
+
+The UI elements will have to probably be global. 
