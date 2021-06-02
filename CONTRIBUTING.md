@@ -10,8 +10,8 @@ Making this in Python only because it is the only language I am comfortable with
 ## (Just a rough outline, change as nessisary)
 
 * __FILE 1: main.py__           main with all initilizations 
-* FILE 2: ndDb.py           database init (sqlite3)
-* FILE 3: ndGUImain.py      pyqt base frontend
-* FILE 4: ndGUIstatic.py    pyqt static frontend
-* FILE 5: ndGUIdynamic.py   pyqt dynamic frontend
-* FILE 6: ndLANG.py         NLTK language processing
+* __FILE 2: ndDb.py__           database init (sqlite3)
+* __FILE 3: ndGUImain.py__      pyqt base frontend
+* __FILE 4: ndGUIstatic.py__    pyqt static frontend
+* __FILE 5: ndGUIdynamic.py__   pyqt dynamic frontend
+* __FILE 6: ndLANG.py__         NLTK language processing
