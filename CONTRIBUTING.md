@@ -9,7 +9,7 @@ Making this in Python only because it is the only language I am comfortable with
 # File structure
 ## (Just a rough outline, change as nessisary)
 
-* FILE 1: main.py           main with all initilizations 
+* __FILE 1: main.py__           main with all initilizations 
 * FILE 2: ndDb.py           database init (sqlite3)
 * FILE 3: ndGUImain.py      pyqt base frontend
 * FILE 4: ndGUIstatic.py    pyqt static frontend
