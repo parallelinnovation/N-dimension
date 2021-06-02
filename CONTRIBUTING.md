@@ -11,7 +11,7 @@ Making this in Python only because it is the only language I am comfortable with
 
 * __FILE 1: main.py__-----------main with all initilizations 
 * __FILE 2: ndDb.py__ ----------database init (sqlite3)
-* __FILE 3: ndGUImain.py__      pyqt base frontend
-* __FILE 4: ndGUIstatic.py__    pyqt static frontend
-* __FILE 5: ndGUIdynamic.py__   pyqt dynamic frontend
-* __FILE 6: ndLANG.py__         NLTK language processing
+* __FILE 3: ndGUImain.py__------pyqt base frontend
+* __FILE 4: ndGUIstatic.py__----pyqt static frontend
+* __FILE 5: ndGUIdynamic.py__---pyqt dynamic frontend
+* __FILE 6: ndLANG.py__---------NLTK language processing
