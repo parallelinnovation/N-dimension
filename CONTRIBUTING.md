@@ -4,7 +4,7 @@ Author: Adrian Papineau
 # Intro
 Making this in Python only because it is the only language I am comfortable with. I plan on using pyqt for the GUI, and sqlite3 for the database storage.
 
-**Please see the documentation for the complete guidelines** 
+**Please see the documentation for the complete framework** Nothing is set in stone, everything is subject to change. Contribute however you see fit. 
 
 [Roam Research documentation](https://roamresearch.com/#/app/NDdatabase/page/zq-dEG3oe)
 
