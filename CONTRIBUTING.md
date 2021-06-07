@@ -5,7 +5,7 @@ CONTRIBUTING.md
 Author: Adrian Papineau
 
 # Intro
-Making this in Python only because it is the only language I am comfortable with. I plan on using pyqt for the GUI, and sqlite3 for the database storage.
+Making this in Python only because it is a language I am comfortable with. I plan on using pyqt for the GUI, and sqlite3 for the database storage.
 
 **Please see the documentation for the complete framework**.
 
