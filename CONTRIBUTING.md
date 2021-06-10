@@ -5,7 +5,6 @@ CONTRIBUTING.md
 Author: Adrian Papineau
 
 # Intro
-Making this in Python only because it is a language I am comfortable with. I plan on using pyqt for the GUI, and sqlite3 for the database storage.
 
 **Please see the documentation for the complete framework**.
 
@@ -19,7 +18,7 @@ Intended to be cross-platform (Windows/OSX/Linux)
 
 **If you know a better suited language**, like lets say Clojure and ClojureScript, please don't hesitate to start programming this project in it. The basis of how it should work should be about the same from language to language.
 
-# File structure
+# File structure for a strictly python and pyqt program (unlikely scenario)
 ## (Just a rough outline, change as nessisary)
 
 * __FILE 1: main.py__---------------main with all initilizations 
@@ -29,4 +28,4 @@ Intended to be cross-platform (Windows/OSX/Linux)
 * __FILE 5: ndGUIdynamic.py__-------pyqt dynamic frontend
 * __FILE 6: ndLANG.py__-------------NLTK language processing
 
-The UI elements will have to probably be global. 
+
