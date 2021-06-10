@@ -1,3 +1,5 @@
+# See the documentation about the block database table: https://roamresearch.com/#/app/NDdatabase/page/PAiymHCFy
+
 import sqlite3
 import uuid
 import time; import datetime
