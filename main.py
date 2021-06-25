@@ -1,6 +1,6 @@
 import sys; import sqlite3; import uuid
-from PyQt5.QtGui import QFontMetrics;
-from PyQt5.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QApplication, QTextEdit, QPushButton, QScrollArea
+from PyQt5.QtGui import *; from PyQt5.QtCore import *
+from PyQt5.QtWidgets import QMainWindow, QAction,QWidget, QVBoxLayout, QApplication, QTextEdit, QPushButton, QScrollArea
 import time; import datetime
 
 
@@ -24,7 +24,7 @@ def new_entry():
     con.commit()
 
 create_table()
-new_entry()
+#new_entry()
 
 
 def fetch_all_content():#also returns a list of tuples.
@@ -49,29 +49,56 @@ class MainWindow(QMainWindow):
 		self.widget = QWidget(self)
 		self.layout = QVBoxLayout(self.widget)
 		self.area = QScrollArea(self)
-		self.area.resize(720,720)
+		self.area.resize(700,700)
 		self.area.setWidget(self.widget)
 		self.area.setWidgetResizable(True)
+		self.btn = QPushButton(clicked=self.close_app)
 
-	def Test(self):
+		#extractAction = QAction("ethteh",self)
+		#extractAction.triggered.connect(self.close_app)
+		#self.toolBar = self.addToolBar("extraction")
+		#self.toolBar.addAction(extractAction)
+
+	def close_app(self):
+		sys.exit()
+
+	def BlockArr(self):
 		for i in self.listnumA:
 			text = QTextEdit(self)
 			text.document().setPlainText(i)
 			font = text.document().defaultFont()
 			fontMetrics = QFontMetrics(font)
 			textSize = fontMetrics.size(0, text.toPlainText())
-			w = 720
-			h = textSize.height() + 20
-			text.setMinimumSize(w,h)
-			text.setMaximumSize(w,h)
+			w = 650
+			h = textSize.height() # This doesn't work for some reason...
+			text.setMinimumSize(w,h+20) # Altering h will change all of them to that size.
+			#text.setMaximumSize(w,h)
 			text.resize(w,h)
 			text.setReadOnly(False)
+			
+			position = text.pos()
+			text.move(position.x()+200,position.y()+0)
+
+
 			self.layout.addWidget(text)
+'''
+class MyLineEdit(QLineEdit):
+    def __init__(self, *args):
+        QLineEdit.__init__(self, *args)
+        
+    def event(self, event):
+        if (event.type()==QEvent.KeyPress) and (event.key()==Qt.Key_Tab):
+            self.emit(SIGNAL("tabPressed"))
+            return True
+
+        return QLineEdit.event(self, event)
+'''
+
 
 if __name__ == "__main__":
 	app = QApplication(sys.argv)
 	mn = MainWindow()
 	mn.show()
-	mn.Test()
-	mn.resize(800,800)
+	mn.BlockArr()
+	mn.resize(720,720)
 	sys.exit(app.exec_())
